@@ -1,26 +1,28 @@
 package oneDimensionalArrays;
 
+/**
+ * Задана последовательность N вещественных чисел. Вычислить сумму чисел, порядковые номера которых
+ * являются простыми числами.
+ */
 public class Task6 {
     public static void main(String[] args) {
-        int[] array = {12, 25, 65, 87, 2, 3, 5, 85, 11, 6};
+        int[] array = {12, 10, 25, 65, 87, 2, 3, 5, 85, 11, 6};
 
         int sum = 0;
-        boolean isNormal;
+        boolean isNormal = true;
 
-        outerLoop:
-        for (int i = 0; i < array.length; i++) {
-            isNormal = false;
+        for (int i = 2; i < array.length; i++) {
             for (int j = 2; j < i; j++) {
                 if (i % j == 0) {
                     isNormal = false;
-                    continue outerLoop;
+                    break;
                 }
-                isNormal = true;
             }
 
             if (isNormal) {
                 sum += array[i];
             }
+            isNormal = true;
         }
 
         System.out.println(sum);
