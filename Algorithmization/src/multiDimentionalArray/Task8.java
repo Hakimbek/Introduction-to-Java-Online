@@ -1,6 +1,5 @@
 package multiDimentionalArray;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -10,35 +9,30 @@ import java.util.Scanner;
  */
 public class Task8 {
     public static void main(String[] args) {
+        // Create and generate matrix
+        Matrix matrixCreator = new Matrix(0,50,4,5);
+        int[][] matrix = matrixCreator.generateMatrix();
+
+        // Print matrix
+        matrixCreator.printMatrix(matrix);
+
+        // Enter columns, we want to swap
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Row: ");
-        int row = scanner.nextInt();
-        System.out.print("Col: ");
-        int col = scanner.nextInt();
-
-        //Generate matrix
-        int[][] matrix = new int[row][col];
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-                matrix[i][j] = (int) (Math.random() * 100);
-            }
-        }
-
-        System.out.println(Arrays.deepToString(matrix));
-
         System.out.print("Col1: ");
         int col1 = scanner.nextInt() - 1;
         System.out.print("Col2: ");
         int col2 = scanner.nextInt() - 1;
-        if (col1 < matrix.length && col2 < matrix.length) {
-            for (int i = 0; i < row; i++) {
-                int temp = matrix[i][col1];
-                matrix[i][col1] = matrix[i][col2];
-                matrix[i][col2] = temp;
+
+        // Swap and print the columns
+        if (col1 < matrixCreator.getCol() && col2 < matrixCreator.getCol()) {
+            for (int i = 0; i < matrixCreator.getRow(); i++) {
+                int temp = matrix[col1][i];
+                matrix[col1][i] = matrix[col2][i];
+                matrix[col2][i] = temp;
             }
-            System.out.println(Arrays.deepToString(matrix));
+            matrixCreator.printMatrix(matrix);
         } else {
-            System.out.println("Invalid column");
+            System.out.println("Invalid number of column");
         }
     }
 }

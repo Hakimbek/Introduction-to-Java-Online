@@ -10,13 +10,15 @@ import java.util.Scanner;
  */
 public class Task7 {
     public static void main(String[] args) {
+        // Enter N(row and col of quadratic matrix) from keyboard
         Scanner scanner = new Scanner(System.in);
         System.out.print("N: ");
         int n = scanner.nextInt();
 
+        // Generate and print matrix
         double[][] matrix = new double[n][n];
-        int countPositiveNumbers = 0;
 
+        int countPositiveNumbers = 0;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 matrix[i][j] = Math.sin((Math.pow(i,2) + Math.pow(j,2)) / n);

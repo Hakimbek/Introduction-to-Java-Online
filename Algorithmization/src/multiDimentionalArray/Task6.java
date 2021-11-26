@@ -14,10 +14,12 @@ import java.util.Scanner;
  */
 public class Task6 {
     public static void main(String[] args) {
+        // Enter N(row and col of quadratic matrix) from keyboard
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter n: ");
         int n = scanner.nextInt();
 
+        // Generate and print matrix
         if (n % 2 == 0) {
             int[][] matrix = new int[n][n];
 

@@ -13,18 +13,19 @@ import java.util.Scanner;
  */
 public class Task5 {
     public static void main(String[] args) {
+        // Enter N(row and col of quadratic matrix) from keyboard
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter n: ");
         int n = scanner.nextInt();
 
+        // Generate and print matrix
         if (n % 2 == 0) {
             int[][] matrix = new int[n][n];
-            int num = 1;
             int length = n;
 
-            for (int i = 0; i < n; i++, num++, length--) {
+            for (int i = 0; i < n; i++, length--) {
                 for (int j = 0; j < length; j++) {
-                    matrix[i][j] = num;
+                    matrix[i][j] = i+1;
                 }
             }
             System.out.println(Arrays.deepToString(matrix));
