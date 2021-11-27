@@ -11,7 +11,6 @@ public class Task1 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("a: ");
         double a = scanner.nextDouble();
-
         System.out.print("b: ");
         double b = scanner.nextDouble();
 

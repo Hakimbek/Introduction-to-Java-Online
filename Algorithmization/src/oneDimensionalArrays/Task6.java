@@ -6,23 +6,23 @@ package oneDimensionalArrays;
  */
 public class Task6 {
     public static void main(String[] args) {
-        int[] array = {12, 10, 25, 65, 87, 2, 3, 5, 85, 11, 6};
+        double[] array = {12, -10, 25.4, 65, 87.2, 2.0, 3, 5, 85.1, 11, 6};
 
         int sum = 0;
-        boolean isNormal = true;
+        boolean isPrime = true;
 
         for (int i = 2; i < array.length; i++) {
             for (int j = 2; j < i; j++) {
                 if (i % j == 0) {
-                    isNormal = false;
+                    isPrime = false;
                     break;
                 }
             }
 
-            if (isNormal) {
+            if (isPrime) {
                 sum += array[i];
             }
-            isNormal = true;
+            isPrime = true;
         }
 
         System.out.println(sum);
