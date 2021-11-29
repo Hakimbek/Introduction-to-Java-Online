@@ -7,6 +7,7 @@ import java.util.Scanner;
  */
 public class Task2 {
     public static void main(String[] args) {
+        // Enter a, b, c, d from keyboard
         Scanner scanner = new Scanner(System.in);
         System.out.print("a: ");
         double a = scanner.nextDouble();
@@ -17,28 +18,30 @@ public class Task2 {
         System.out.print("d: ");
         double d = scanner.nextDouble();
 
+        // First way
         double max = Math.max(Math.min(a, b), Math.min(c, d));
-        System.out.println("Max = " + max);
+        System.out.println("Max: " + max);
 
-//        double firstMax;
-//        double secondMax;
-//
-//        if (a < b) {
-//            firstMax = a;
-//        } else {
-//            firstMax = b;
-//        }
-//
-//        if (c < d) {
-//            secondMax = c;
-//        } else {
-//            secondMax = d;
-//        }
-//
-//        if (firstMax > secondMax) {
-//            System.out.println(firstMax);
-//        } else {
-//            System.out.println(secondMax);
-//        }
+        // Second way
+        double firstMin;
+        double secondMin;
+
+        if (a < b) {
+            firstMin = a;
+        } else {
+            firstMin = b;
+        }
+
+        if (c < d) {
+            secondMin = c;
+        } else {
+            secondMin = d;
+        }
+
+        if (firstMin > secondMin) {
+            System.out.println("Max: " + firstMin);
+        } else {
+            System.out.println("Max: " + secondMin);
+        }
     }
 }

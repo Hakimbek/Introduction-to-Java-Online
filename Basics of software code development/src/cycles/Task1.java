@@ -8,12 +8,16 @@ import java.util.Scanner;
  */
 public class Task1 {
     public static void main(String[] args) {
+        // Enter number from keyboard
         Scanner scanner = new Scanner(System.in);
         System.out.print("Number: ");
         int num = scanner.nextInt();
+
+        // Calculate and print the sum
         System.out.println(sum(num));
     }
 
+    // Recursion
     public static int sum(int num) {
         if (num == 1) {
             return 1;

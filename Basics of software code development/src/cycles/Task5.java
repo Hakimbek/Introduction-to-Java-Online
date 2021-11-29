@@ -8,10 +8,12 @@ import java.util.Scanner;
  */
 public class Task5 {
     public static void main(String[] args) {
+        // Enter e from keyboard
         Scanner scanner = new Scanner(System.in);
         System.out.print("e: ");
         double e = scanner.nextDouble();
 
+        // Calculate
         int count = 1;
         double sum = 0;
         while (true) {
@@ -24,6 +26,7 @@ public class Task5 {
             count++;
         }
 
+        // Print
         System.out.println(sum);
     }
 }

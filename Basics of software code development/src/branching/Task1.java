@@ -8,19 +8,21 @@ import java.util.Scanner;
  */
 public class Task1 {
     public static void main(String[] args) {
+        // Enter a, b from keyboard
         Scanner scanner = new Scanner(System.in);
         System.out.print("a: ");
         double a = scanner.nextDouble();
         System.out.print("b: ");
         double b = scanner.nextDouble();
 
+        // Check
         if (a + b >= 180) {
-            System.out.println("Треугольник не существует");
+            System.out.println("The triangle does not exist");
         } else {
             if (a == 90 || b == 90 || a + b == 90) {
-                System.out.println("Треугольник прямоугольный");
+                System.out.println("Rectangular triangle");
             } else {
-                System.out.println("Треугольник не прямоугольный");
+                System.out.println("The triangle is not rectangular");
             }
         }
     }

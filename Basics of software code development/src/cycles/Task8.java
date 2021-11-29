@@ -1,32 +1,35 @@
 package cycles;
 
-import java.util.HashSet;
-import java.util.Scanner;
-
 /**
  * Даны два числа. Определить цифры, входящие в запись как первого так и второго числа.
  */
 public class Task8 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("First number: ");
-        int firstNumber = scanner.nextInt();
-        System.out.print("Second number: ");
-        int secondNumber = scanner.nextInt();
+        // Boolean representation of digits which include in record of two numbers, from 0 to 9
+        boolean[] numbers = {false,false,false,false,false,false,false,false,false,false};
 
-        HashSet<Integer> digitsInTwoNumbers = new HashSet<>();
+        int a = 356125;
+        int b = 5781113;
 
-        while (firstNumber > 0) {
-            int tempSecondNumber = secondNumber;
-            int firstNumberDigit = firstNumber % 10;
-            while (tempSecondNumber > 0) {
-                if (firstNumberDigit == tempSecondNumber % 10) {
-                    digitsInTwoNumbers.add(firstNumberDigit);
+        // Find digits which include in record of two numbers
+        while (a != 0) {
+            int tempB = b;
+            while (tempB != 0) {
+                if (a % 10 == tempB % 10) {
+                    if (!numbers[a % 10]) {
+                        numbers[a % 10] = true;
+                    }
                 }
-                tempSecondNumber /= 10;
+                tempB /= 10;
             }
-            firstNumber /= 10;
+            a /= 10;
         }
-        System.out.println(digitsInTwoNumbers);
+
+        // Print
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i]) {
+                System.out.print(i + " ");
+            }
+        }
     }
 }

@@ -8,13 +8,17 @@ import java.util.Scanner;
  */
 public class Task7 {
     public static void main(String[] args) {
+        // Enter m and n from keyboard
         Scanner scanner = new Scanner(System.in);
         System.out.print("m: ");
         int m = scanner.nextInt();
         System.out.print("n: ");
         int n = scanner.nextInt();
+
+        // I use concatenation many times so I used StringBuffer
         StringBuffer result = new StringBuffer();
 
+        // Find and print divisors
         if (m <= n) {
             for (int i = m; i < n; i++) {
                 result.append(i).append(": ");

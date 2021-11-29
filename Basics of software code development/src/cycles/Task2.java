@@ -9,6 +9,7 @@ import java.util.Scanner;
  */
 public class Task2 {
     public static void main(String[] args) {
+        // Enter [a, b] and h from keyboard
         Scanner scanner = new Scanner(System.in);
         System.out.print("a: ");
         int a = scanner.nextInt();
@@ -17,6 +18,7 @@ public class Task2 {
         System.out.print("h: ");
         int h = scanner.nextInt();
 
+        // Calculate the value of function
         if (a <= b) {
             for (int i = a; i <= b; i += h) {
                 if (i <= 2) {

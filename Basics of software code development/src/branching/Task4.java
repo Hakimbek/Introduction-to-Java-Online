@@ -8,12 +8,14 @@ import java.util.Scanner;
  */
 public class Task4 {
     public static void main(String[] args) {
+        // Enter size of rectangular hole (A, B)
         Scanner scanner = new Scanner(System.in);
         System.out.print("A: ");
         double A = scanner.nextDouble();
         System.out.print("B: ");
         double B = scanner.nextDouble();
 
+        // Enter size of brick (x, y, z)
         System.out.print("x: ");
         double x = scanner.nextDouble();
         System.out.print("y: ");
@@ -21,6 +23,7 @@ public class Task4 {
         System.out.print("z: ");
         double z = scanner.nextDouble();
 
+        // Check
         if ((A > x && B > y) || (A > y && B > x) ||
                 (A > z && B > x) || (A > x && B > z) ||
                 (A > z && B > y) || (A > y && B > z)) {
