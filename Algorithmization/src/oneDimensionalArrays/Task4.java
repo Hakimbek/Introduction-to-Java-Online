@@ -9,6 +9,7 @@ public class Task4 {
     public static void main(String[] args) {
         int[] array = {1, 56, 55, 11, 74, 85, 56, 25, 8, 123, 45, 77, 63};
 
+        // Replace max and min elements
         int max = 0;
         int min = 0;
 
@@ -26,6 +27,7 @@ public class Task4 {
         array[min] = array[max];
         array[max] = temp;
 
+        // Print
         System.out.println(Arrays.toString(array));
     }
 }

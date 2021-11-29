@@ -8,6 +8,7 @@ public class Task3 {
     public static void main(String[] args) {
         int[] array = {-10, 5, 0, 25, 0, -56, -7, 41, 78, 66, -5};
 
+        // Count positive, negative and zero elements
         int positive = 0;
         int negative = 0;
         int zero = 0;
@@ -22,6 +23,7 @@ public class Task3 {
             }
         }
 
+        // Print
         System.out.println("Positive numbers: " + positive +
                 "\nNegative numbers " + negative + "\nZero " + zero);
     }

@@ -8,6 +8,7 @@ public class Task6 {
     public static void main(String[] args) {
         double[] array = {12, -10, 25.4, 65, 87.2, 2.0, 3, 5, 85.1, 11, 6};
 
+        // Calculate sum of numbers which index is prime
         int sum = 0;
         boolean isPrime = true;
 
@@ -25,6 +26,7 @@ public class Task6 {
             isPrime = true;
         }
 
+        // Print sum
         System.out.println(sum);
     }
 }

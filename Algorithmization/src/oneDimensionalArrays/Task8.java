@@ -1,7 +1,5 @@
 package oneDimensionalArrays;
 
-import java.util.Arrays;
-
 /**
  * Дана последовательность целых чисел a1, a2,...an. Образовать новую последовательность, выбросив из
  * исходной те члены, которые равны min(a1, a2,...an)
@@ -10,6 +8,7 @@ public class Task8 {
     public static void main(String[] args) {
         int[] array = {12, 2, 5, 65, 88, 74};
 
+        // Find min
         int min = array[0];
 
         for (int j : array) {
@@ -35,7 +34,23 @@ public class Task8 {
             countNewArray++;
         }
 
-        System.out.println("Old array: " + Arrays.toString(array));
-        System.out.println("New array: " + Arrays.toString(newArray));
+        // Print
+        System.out.print("[");
+        for (int i = 0; i < array.length; i++) {
+            if (i == array.length - 1) {
+                System.out.print(array[i] + "]");
+            } else {
+                System.out.print(array[i] + ", ");
+            }
+        }
+
+        System.out.print("\n[");
+        for (int i = 0; i < newArray.length; i++) {
+            if (i == newArray.length - 1) {
+                System.out.print(newArray[i] + "]");
+            } else {
+                System.out.print(newArray[i] + ", ");
+            }
+        }
     }
 }
