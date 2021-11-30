@@ -12,7 +12,7 @@ public class Task12 {
         // Print matrix
         matrixCreator.printMatrix(matrix);
 
-        // Sort rows of matrix
+        // Sort ascending
         for (int i = 0; i < matrixCreator.getRow(); i++) {
             for (int j = 0; j < matrixCreator.getCol(); j++) {
                 for (int k = 0; k < matrixCreator.getCol() - 1; k++) {
@@ -24,8 +24,10 @@ public class Task12 {
                 }
             }
         }
+        // Print
         matrixCreator.printMatrix(matrix);
 
+        // Sort descending
         for (int i = 0; i < matrixCreator.getRow(); i++) {
             for (int j = 0; j < matrixCreator.getCol(); j++) {
                 for (int k = 0; k < matrixCreator.getCol() - 1; k++) {
@@ -37,6 +39,7 @@ public class Task12 {
                 }
             }
         }
+        // Print
         matrixCreator.printMatrix(matrix);
     }
 }

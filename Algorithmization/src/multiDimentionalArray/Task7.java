@@ -1,6 +1,5 @@
 package multiDimentionalArray;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -27,7 +26,16 @@ public class Task7 {
                 }
             }
         }
-        System.out.println(Arrays.deepToString(matrix));
+
+        // Print matrix
+        for (double[] row : matrix) {
+            for (double col : row) {
+                System.out.print(col + " ");
+            }
+            System.out.println();
+        }
+
+        // Print count of positive elements
         System.out.println(countPositiveNumbers);
     }
 }

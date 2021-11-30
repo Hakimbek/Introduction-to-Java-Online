@@ -30,6 +30,8 @@ public class Task9 {
             }
             temp = 0;
         }
+
+        // Print sum
         System.out.println("The column containing the maximum amount: " + count);
     }
 }

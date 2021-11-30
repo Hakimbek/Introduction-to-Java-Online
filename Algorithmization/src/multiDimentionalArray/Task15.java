@@ -30,6 +30,8 @@ public class Task15 {
                 }
             }
         }
+
+        // Print changed matrix
         matrixCreator.printMatrix(matrix);
     }
 }

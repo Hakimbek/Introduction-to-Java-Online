@@ -1,6 +1,5 @@
 package multiDimentionalArray;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -9,11 +8,11 @@ import java.util.Scanner;
 public class Task3 {
     public static void main(String[] args) {
         // Create and generate matrix
-        Matrix matrixCreator = new Matrix(0,50,4,5);
-        int[][] matrix = matrixCreator.generateMatrix();
+        Matrix matrixGenerator = new Matrix(0,50,4,5);
+        int[][] matrix = matrixGenerator.generateMatrix();
 
         // Print matrix
-        matrixCreator.printMatrix(matrix);
+        matrixGenerator.printMatrix(matrix);
 
         // Print the k-th row and p-th column of the matrix
         Scanner scanner = new Scanner(System.in);
@@ -24,14 +23,14 @@ public class Task3 {
 
         try {
             System.out.print("K-th row of matrix: ");
-            for (int i = 0; i < matrixCreator.getCol(); i++) {
+            for (int i = 0; i < matrixGenerator.getCol(); i++) {
                 System.out.print(matrix[i][k] + " ");
             }
 
             System.out.println();
 
             System.out.print("P-th column of matrix: ");
-            for (int i = 0; i < matrixCreator.getRow(); i++) {
+            for (int i = 0; i < matrixGenerator.getRow(); i++) {
                 System.out.print(matrix[p][i] + " ");
             }
         } catch (Exception e) {

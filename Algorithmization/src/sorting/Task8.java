@@ -1,19 +1,27 @@
 package sorting;
 
+/**
+ * Даны дроби p1/q1, p2/q2, ..., pn/qn (p, q - натуральные). Составить программу, которая приводит эти
+ * дроби общему знаменателю и упорядочить их в порядке возростания.
+ */
 public class Task8 {
     public static void main(String[] args) {
         int[] numerator = {2, 5, 6, 8, 10, 74, 25, 22, 1};
         int[] denomerator = {10, 6, 8, 14, 12, 90, 26, 30, 50};
 
+        // Sort
         sort(numerator, denomerator);
 
+        // Print sorting arrays
         for (int i = 0; i < numerator.length; i++) {
             System.out.println(numerator[i] + "/" + denomerator[i]);
         }
 
+        // Print gcd
         System.out.println("Общий знаменатель: " + gcd(denomerator));
     }
 
+    // Calculate gcd
     public static int gcd(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
             int a = arr[0];
@@ -28,6 +36,7 @@ public class Task8 {
         return arr[0];
     }
 
+    // Sorting method
     public static void sort(int[] a, int[] b) {
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a.length - 1; j++) {

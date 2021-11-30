@@ -8,8 +8,32 @@ import java.util.*;
  */
 public class Task9 {
     public static void main(String[] args) {
-        int[] array = {54, 56, 55, 8, 11, 5, 66, 1, 1, 2, 3, 3, 2};
+        int[] array = {54, 56, 55, 8, 11, 5, 66, 3, 3, 2, 3, 2, 2};
 
+        // First way
+        int frequentNumber = 0;
+        int repetitionCount = 0;
+        for (int i : array) {
+            int count = 0;
+            for (int j : array) {
+                if (i == j) {
+                    count++;
+                }
+            }
+            if (count > repetitionCount) {
+                repetitionCount = count;
+                frequentNumber = i;
+            }
+            if (count == repetitionCount && i < frequentNumber) {
+                frequentNumber = i;
+            }
+        }
+
+        // Print
+        System.out.println(frequentNumber);
+
+
+        // Second way (faster)
         TreeMap<Integer, Integer> map = new TreeMap<>();
         for (int i : array) {
             if (map.containsKey(i)) {
@@ -31,6 +55,8 @@ public class Task9 {
             count++;
         }
         Object[] keys = map.keySet().toArray();
+
+        // Print
         System.out.println(keys[keyIndex]);
     }
 }

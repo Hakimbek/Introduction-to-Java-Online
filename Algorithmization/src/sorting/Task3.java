@@ -1,7 +1,5 @@
 package sorting;
 
-import java.util.Arrays;
-
 /**
  * Сортировка выбором. Дана последовательность чисел a1 <= a2 ... <= an.
  * Требуется переставить элементы так, чтобы они были расположены по убыванию.
@@ -9,12 +7,22 @@ import java.util.Arrays;
  * а первый - на место наибольшего. Затем, начиная со второго, это процедура повторяется.
  * Написать алгоритм сортировки выбором.
  *
+ * Worst Case Time Complexity [Big-O]: O(n^2)
+ * Best Case Time Complexity [Big-omega]: O(n^2)
+ * Average Case Time Complexity [Big-theta]: O(n^2)
+ * Space Complexity: O(1)
  */
 public class Task3 {
     public static void main(String[] args) {
         int[] array = {1, 6, 11, 26, 4, 45, 68, 5};
+
+        // Sort
         selectionSort(array);
-        System.out.println(Arrays.toString(array));
+
+        // Print sorting array
+        for (int num : array) {
+            System.out.print(num + " ");
+        }
     }
 
     // Swap indexes of maximum number of array with i-index
@@ -38,7 +46,7 @@ public class Task3 {
         return maxIndex;
     }
 
-    // Sort
+    // Sorting method
     public static void selectionSort(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             int maxIndex = indexOfMaximum(arr, i);

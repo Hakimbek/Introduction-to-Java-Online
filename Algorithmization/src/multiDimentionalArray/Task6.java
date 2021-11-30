@@ -1,6 +1,5 @@
 package multiDimentionalArray;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -45,7 +44,13 @@ public class Task6 {
                     length--;
                 }
             }
-            System.out.println(Arrays.deepToString(matrix));
+            // Print
+            for (int[] row : matrix) {
+                for (int col : row) {
+                    System.out.print(col + " ");
+                }
+                System.out.println();
+            }
         } else {
             System.out.println("n must be even");
         }

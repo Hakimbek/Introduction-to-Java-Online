@@ -6,11 +6,11 @@ package multiDimentionalArray;
 public class Task2 {
     public static void main(String[] args) {
         // Create and generate matrix
-        Matrix matrixCreator = new Matrix(0,50,3,3);
-        int[][] matrix = matrixCreator.generateMatrix();
+        Matrix matrixGenerator = new Matrix(0,50,3,3);
+        int[][] matrix = matrixGenerator.generateMatrix();
 
         // Print matrix
-        matrixCreator.printMatrix(matrix);
+        matrixGenerator.printMatrix(matrix);
 
         // Find and print matrix diagonals
         int max = matrix.length - 1;
