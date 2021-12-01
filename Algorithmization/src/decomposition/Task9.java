@@ -14,7 +14,7 @@ public class Task9 {
         return a * b / 2;
     }
 
-    // Назодит гипотенузу прямоугольного треугольника по катетам (a, b)
+    // Находит гипотенузу прямоугольного треугольника по катетам (a, b)
     public static double findHypothesis(double a, double b) {
         return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
     }
