@@ -20,27 +20,22 @@ public class Task14 {
         int[][] matrix = new int[n][n];
 
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if (i >= j) {
-                    matrix[i][j] = 1;
-                } else {
-                    matrix[i][j] = 0;
+            int count = 0;
+            while (count <= i) {
+                int num = (int) (Math.random() * (n));
+                if (matrix[i][num] != 1) {
+                    matrix[i][num] = 1;
+                    count++;
                 }
             }
         }
 
-        // Shuffle matrix
-        ArrayList<Integer> arrayList = new ArrayList();
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                arrayList.add(matrix[i][j]);
+        // Print matrix
+        for (int[] row : matrix) {
+            for (int col : row) {
+                System.out.print(col + " ");
             }
-            Collections.shuffle(arrayList);
-            for (int j = 0; j < n; j++) {
-                matrix[i][j] = arrayList.get(j);
-            }
-            arrayList.clear();
+            System.out.println();
         }
-        System.out.println(Arrays.deepToString(matrix));
     }
 }
