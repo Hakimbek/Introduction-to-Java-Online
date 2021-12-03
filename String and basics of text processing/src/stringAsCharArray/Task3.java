@@ -1,4 +1,4 @@
-package stringArrays;
+package stringAsCharArray;
 
 /**
  * В строке найти количество цифр.
