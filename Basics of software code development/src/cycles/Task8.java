@@ -5,7 +5,7 @@ package cycles;
  */
 public class Task8 {
     public static void main(String[] args) {
-        // Boolean representation of digits which include in record of two numbers, from 0 to 9
+        // Boolean representation of digits from 0 to 9
         boolean[] numbers = {false,false,false,false,false,false,false,false,false,false};
 
         int a = 356125;

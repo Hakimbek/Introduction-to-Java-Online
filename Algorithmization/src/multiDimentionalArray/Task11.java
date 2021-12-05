@@ -14,6 +14,7 @@ public class Task11 {
         matrixCreator.printMatrix(matrix);
 
         // Find row numbers in which the number 5 occurs three or more times
+        System.out.print("Row: ");
         int count = 0;
         for (int i = 0; i < matrixCreator.getRow(); i++) {
             for (int j = 0; j < matrixCreator.getCol(); j++) {
@@ -22,7 +23,7 @@ public class Task11 {
                 }
             }
             if (count >= 3) {
-                System.out.println(i+1);
+                System.out.print((i+1) + " ");
             }
             count = 0;
         }

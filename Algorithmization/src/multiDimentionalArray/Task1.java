@@ -6,7 +6,7 @@ package multiDimentionalArray;
 public class Task1 {
     public static void main(String[] args) {
         // Create and generate matrix
-        Matrix matrixGenerator = new Matrix(0,50,4,2);
+        Matrix matrixGenerator = new Matrix(0,50,4,4);
         int[][] matrix = matrixGenerator.generateMatrix();
 
         // Print matrix

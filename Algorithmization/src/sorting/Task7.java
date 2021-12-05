@@ -11,23 +11,31 @@ public class Task7 {
         int[] firstArr = {11, 15, 20, 36, 38, 40};
         int[] secondArr = {2, 19, 22, 26, 28, 35, 50};
 
-        int length = firstArr.length +secondArr.length;
+        boolean lessThan = false;
         int firstCount = 0;
         int secondCount = 0;
-        for (int i = 0; i < length; i++) {
-            System.out.print("mergedArray[" + i + "]: ");
-            if (secondCount == secondArr.length) {
-                System.out.println(firstArr[firstCount]);
-                firstCount++;
-            } else if (firstCount == firstArr.length) {
-                System.out.println(secondArr[secondCount]);
+        for (int i = 0; i < firstArr.length; i++) {
+            if (firstArr[firstCount] > secondArr[secondCount]) {
+                System.out.print("firstArr[from " + (i - 1) + " to " + i + "]: ");
+                lessThan = true;
+            }
+
+            while (firstArr[firstCount] > secondArr[secondCount]) {
+                System.out.print(secondArr[secondCount] + " ");
                 secondCount++;
-            } else if (firstArr[firstCount] < secondArr[secondCount]) {
-                System.out.println(firstArr[firstCount]);
-                firstCount++;
-            } else {
-                System.out.println(secondArr[secondCount]);
-                secondCount++;
+            }
+            firstCount++;
+
+            if (lessThan) {
+                System.out.println();
+            }
+            lessThan = false;
+         }
+
+        if (secondArr.length > firstArr.length) {
+            System.out.print("firstArr[from " + (firstCount - 1) + " to ..." + "]: ");
+            for (int i = secondCount; i < secondArr.length; i++) {
+                System.out.print(secondArr[i] + " ");
             }
         }
     }

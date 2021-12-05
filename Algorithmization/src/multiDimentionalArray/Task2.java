@@ -16,10 +16,10 @@ public class Task2 {
         int max = matrix.length - 1;
         for (int i = 0; i < matrix.length; i++) {
             if (matrix[i][i] != matrix[i][max]) {
-                System.out.println(matrix[i][i]);
-                System.out.println(matrix[i][max]);
+                System.out.print(matrix[i][i] + " ");
+                System.out.print(matrix[i][max] + " ");
             } else {
-                System.out.println(matrix[i][i]);
+                System.out.print(matrix[i][i] + " ");
             }
             max--;
         }

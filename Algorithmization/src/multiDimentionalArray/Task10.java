@@ -15,7 +15,7 @@ public class Task10 {
         // Find and print positive numbers of matrix diagonal
         for (int i = 0; i < matrix.length; i++) {
             if (matrix[i][i] > 0) {
-                System.out.println(matrix[i][i]);
+                System.out.print(matrix[i][i] + " ");
             }
         }
     }

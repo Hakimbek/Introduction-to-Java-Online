@@ -14,7 +14,7 @@ public class Task7 {
         System.out.print("N: ");
         int n = scanner.nextInt();
 
-        // Generate and print matrix
+        // Generate and count positive elements of matrix
         double[][] matrix = new double[n][n];
 
         int countPositiveNumbers = 0;

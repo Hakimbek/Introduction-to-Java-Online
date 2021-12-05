@@ -1,7 +1,5 @@
 package oneDimensionalArrays;
 
-import java.util.Arrays;
-
 /**
  * Даны действительные числа а1, а2,...аn. Поменять местами наибольший и наименьший элемент.
  */
@@ -28,6 +26,13 @@ public class Task4 {
         array[max] = temp;
 
         // Print
-        System.out.println(Arrays.toString(array));
+        System.out.print("[");
+        for (int i = 0; i < array.length; i++) {
+            if (i == array.length - 1) {
+                System.out.print(array[i] + "]");
+            } else {
+                System.out.print(array[i] + ", ");
+            }
+        }
     }
 }

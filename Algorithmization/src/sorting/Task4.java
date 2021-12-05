@@ -20,7 +20,7 @@ public class Task4 {
         int count = bubbleSort(array);
 
         // Print count
-        System.out.println(count);
+        System.out.println("Count: " + count);
 
         // Print sorted array
         for (int num : array) {

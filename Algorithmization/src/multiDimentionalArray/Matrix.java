@@ -1,5 +1,7 @@
 package multiDimentionalArray;
 
+import java.util.Formatter;
+
 public class Matrix {
     // Minimum num of range
     private int min;
@@ -12,6 +14,8 @@ public class Matrix {
 
     // Num of columns
     private int col;
+
+    private Formatter formatter = new Formatter(System.out);
 
     public Matrix() {
     }
@@ -36,7 +40,7 @@ public class Matrix {
     public void printMatrix(int[][] matrix) {
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
-                System.out.print(matrix[j][i] + " ");
+                formatter.format("%4s",matrix[j][i]);
             }
             System.out.println();
         }

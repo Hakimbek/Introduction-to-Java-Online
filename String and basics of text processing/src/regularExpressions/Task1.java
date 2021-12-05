@@ -1,6 +1,7 @@
 package regularExpressions;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * Создать приложение, разбирающее текст (текст хранится в строке) и позволяющее выполняет с текстом
@@ -10,13 +11,41 @@ import java.util.Arrays;
  */
 public class Task1 {
     public static void main(String[] args) {
-        String text = "My name is Hakimbek aaaaa. kklklkjlk. ygjgujgyhj?\n" +
-                "\tI am student. h? j? k?\n" +
-                "\tDo you like reading books?\n" +
+        String text = "My name is Hakimbek Bahramov. I am 22 years old.\n" +
+                "\tI am student. I study in UrSU. I study in economy faculty. I like coding!\n" +
+                "\tDo you like read books?\n" +
                 "\tI am developer. I live in Urgench";
-        String[] strings = sortLetter(text, 'a');
-        for (String string : strings) {
-            System.out.println(string);
+
+        System.out.println("Введите 1 для отсортировки обзацов по количеству предложений");
+        System.out.println("Введите 2 для отсортировки слов по длине");
+        System.out.println("Введите 3 для отсортировки лексем в предложении");
+        System.out.println("Введите 0 для выхода");
+        System.out.println("------------------------------------------------------------");
+
+        int num = 1;
+        while (num == 1) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Введите: ");
+            int enteredNum = scanner.nextInt();
+
+            if (enteredNum == 1) {
+                String[] strings = sortParagraph(text);
+                for (String string : strings) {
+                    System.out.println(string);
+                }
+            } else if (enteredNum == 2) {
+                String[] strings = sortWords(text);
+                for (String string : strings) {
+                    System.out.println(string);
+                }
+            } else if (enteredNum == 3) {
+                String[] strings = sortLetter(text, 'a');
+                for (String string : strings) {
+                    System.out.println(string);
+                }
+            } else if (enteredNum == 0) {
+                num = 0;
+            }
         }
     }
 

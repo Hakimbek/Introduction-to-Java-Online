@@ -44,6 +44,7 @@ public class Task8 {
             }
         }
 
+        // Print new array
         System.out.print("\n[");
         for (int i = 0; i < newArray.length; i++) {
             if (i == newArray.length - 1) {

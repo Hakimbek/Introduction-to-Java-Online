@@ -15,8 +15,8 @@ public class Task7 {
         System.out.print("n: ");
         int n = scanner.nextInt();
 
-        // I use concatenation many times so I used StringBuffer
-        StringBuffer result = new StringBuffer();
+        // I use concatenation many times so I used StringBuilder
+        StringBuilder result = new StringBuilder();
 
         // Find and print divisors
         if (m <= n) {
@@ -28,7 +28,7 @@ public class Task7 {
                     }
                 }
                 System.out.println(result);
-                result = new StringBuffer();
+                result = new StringBuilder();
             }
         } else {
             System.out.println("Error");

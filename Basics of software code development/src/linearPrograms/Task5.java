@@ -15,8 +15,6 @@ public class Task5 {
         int minute = num % 60;
         int hour = num / 60;
 
-        System.out.println( ((hour/10 != 0) ? hour : "0" + hour) + "ч " +
-                ((minute/10 != 0) ? minute : "0" + minute) + "мин " +
-                ((seconds/10 != 0) ? seconds : "0" + seconds) + "c");
+        System.out.printf("%dч %dмин %dс", hour, minute, seconds);
     }
 }

@@ -7,7 +7,7 @@ package multiDimentionalArray;
 public class Task9 {
     public static void main(String[] args) {
         // Create and generate matrix
-        Matrix matrixCreator = new Matrix(0,50,1,6);
+        Matrix matrixCreator = new Matrix(0,50,5,6);
         int[][] matrix = matrixCreator.generateMatrix();
 
         // Print matrix
@@ -32,6 +32,6 @@ public class Task9 {
         }
 
         // Print sum
-        System.out.println("The column containing the maximum amount: " + count);
+        System.out.println("Col: " + count);
     }
 }
