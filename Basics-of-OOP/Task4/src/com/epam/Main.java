@@ -1,0 +1,9 @@
+package com.epam;
+
+import com.epam.consoleProgramm.Console;
+
+public class Main {
+    public static void main(String[] args) {
+        Console.start();
+    }
+}
