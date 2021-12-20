@@ -16,5 +16,6 @@
 - [The simplest classes and objects](https://github.com/Hakimbek/Introduction-to-Java-Online/tree/master/4_Programming_with_classes/The-simplest-classes-and-objects)
 - [Aggregation and composition](https://github.com/Hakimbek/Introduction-to-Java-Online/tree/master/4_Programming_with_classes/Aggregation-and-composition)
 ## Basics of OOP
-- [Basics_of_OOP](https://github.com/Hakimbek/Introduction-to-Java-Online/tree/master/5_Basics_of_OOP)
+- [BasicsOfOOP](https://github.com/Hakimbek/Introduction-to-Java-Online/tree/master/5_Basics_of_OOP)
 ## Tasks
+- [Tasks](https://github.com/Hakimbek/Introduction-to-Java-Online/tree/master/6_Tasks)
