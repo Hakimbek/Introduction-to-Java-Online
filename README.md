@@ -13,11 +13,7 @@
 - [stringObject](https://github.com/Hakimbek/Introduction-to-Java-Online/tree/master/3_String_and_basics_of_text_processing/src/stringObject)
 - [regularExpressions](https://github.com/Hakimbek/Introduction-to-Java-Online/tree/master/3_String_and_basics_of_text_processing/src/regularExpressions)
 ## Programming with classes
-  ###
-  The simplest classes and objects
-  
-  ###
-  Aggregation and composition
-  
+- [The simplest classes and objects](https://github.com/Hakimbek/Introduction-to-Java-Online/tree/master/4_Programming_with_classes/The-simplest-classes-and-objects)
+- [Aggregation and composition](https://github.com/Hakimbek/Introduction-to-Java-Online/tree/master/4_Programming_with_classes/Aggregation-and-composition)
 ## Basics of OOP
 ## Tasks
