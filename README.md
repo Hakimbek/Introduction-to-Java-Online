@@ -9,7 +9,9 @@
 - [sorting](https://github.com/Hakimbek/Introduction-to-Java-Online/tree/master/2_Algorithmization/src/sorting)
 - [decomposition](https://github.com/Hakimbek/Introduction-to-Java-Online/tree/master/2_Algorithmization/src/decomposition)
 ## String and basics of text processing
-
+- [charArray](https://github.com/Hakimbek/Introduction-to-Java-Online/tree/master/3_String_and_basics_of_text_processing/src/charArray)
+- [stringObject](https://github.com/Hakimbek/Introduction-to-Java-Online/tree/master/3_String_and_basics_of_text_processing/src/stringObject)
+- [regularExpressions](https://github.com/Hakimbek/Introduction-to-Java-Online/tree/master/3_String_and_basics_of_text_processing/src/regularExpressions)
 ## Programming with classes
 ## Basics of OOP
 ## Tasks
