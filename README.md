@@ -1,2 +1,3 @@
 # Introduction to Java Online
-## Basics of software deweloping
+## Basics of software code dewelopment
+## Algirithmization
