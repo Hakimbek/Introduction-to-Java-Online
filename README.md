@@ -15,7 +15,9 @@
 ## Programming with classes
   ###
   The simplest classes and objects
+  
   ###
   Aggregation and composition
+  
 ## Basics of OOP
 ## Tasks
